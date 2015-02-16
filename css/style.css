@@ -1,0 +1,110 @@
+@font-face {
+    font-family: Jaapokki;
+    src:url(../assets/fonts/jaapokki-regular.ttf);
+}
+
+@font-face {
+    font-family: OpenSans;
+    src:url(../assets/fonts/OpenSans.ttf);
+}
+
+body{
+    text-align: center;
+    background-color: #f8f8f8;
+    font-family: OpenSans;
+}
+
+#heading{
+    font-size: 6em;
+    margin-top: 50px;
+    font-family: Jaapokki;
+    text-transform: uppercase;
+    color: #505050;
+}
+
+#headinghr{
+    margin-bottom: 50px;
+    height: 1px;
+    background-color: #beb8b8;
+}
+
+.fancy-select{
+    width: 200px;
+    left: 50%;
+    margin: 20px 0px;
+    margin-left:-200px;
+    letter-spacing: 1.3px;
+}
+
+ .selectBig ~ .trigger{
+    width: 200% !important;
+}
+
+ .selectBig ~ .options{
+    width: 200% !important;
+}
+
+#getCaseInfoContainer {
+    display: none;
+}
+
+.options{
+    padding: 0px !important;
+}
+
+#byTDP{
+    font-size: 11px;
+    letter-spacing: -0.5px;
+    color: #767676;
+    font-family: OpenSans;
+}
+
+#getCaseInfoContainer{
+    border: 3px solid #7c7c7c;
+    width: 40%;
+    padding: 2%;
+    margin: 0px auto;
+    border-radius: 10px;
+}
+
+#caseInfoList{
+    list-style-type: none;
+}
+
+.caseInfo{
+    font-size: 1.25em;
+    margin: 20px 0px;
+    
+    font-family: monospace;
+}
+
+.caseInfo b{
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 1.1em;
+}
+
+#settingsBtn {
+    height: 42px;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#settingsBtn:hover{
+    animation: rotateSettingBtn 5s linear infinite;
+}
+
+@keyframes rotateSettingBtn{
+    0%{transform: rotate(0deg)}
+    25%{transform: rotate(90deg)}
+    50%{transform: rotate(180deg)}
+    75%{transform: rotate(270deg)}
+    100%{transform: rotate(360deg)}
+}
+
+#settingsSidr {
+    display: none;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CLL Trainer</title>
+        <link rel="stylesheet" href="css/deps/bootstrap.min.css">
+        <link rel="stylesheet" href="css/deps/fancySelect.css">
+        <link rel="stylesheet" href="css/deps/jquery.sidr.dark.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/deps/jquery-2.1.3.min.js" defer></script>
+        <script src="js/deps/jquery.sidr.min.js" defer></script>
+        <script src="js/deps/fancySelect.js" defer></script>
+        <script src="js/script.js" defer></script>
+    </head>
+    <body>
+        <img src="assets/icons/gear.png" alt="settings" id="settingsBtn">
+        
+        <div id="settingsSidr">
+           <br>
+            <input type="checkbox"class="settingsCheckbox" id="aufCheckbox" /> <label for="aufCheckbox">Enable AUF</label>
+        </div>
+        
+        <h1 id="heading">CLL Trainer<a href="http://tobip.ch" id="byTDP">(by TDP)</a></h1>
+        <hr id="headinghr">
+
+        <div id="selectContainer">
+            <select class="basic selectBig" name="setSelect" id="setSelect">
+                <option value="s">Sune</option>
+                <option value="as">Anti-Sune</option>
+                <option value="pi">Pi</option>
+                <option value="u">U</option>
+                <option value="l">L</option>
+                <option value="t">T</option>
+                <option value="h">H</option>
+                <option value="any">Any Case</option>
+            </select>
+        </div>
+        
+        
+        <button onclick="getCase()" class="btn btn-default btn-lg">Get Random Case</button>
+        
+        <br>
+        <br>
+        
+        <img src="http://cube.crider.co.uk/visualcube.php?fmt=png&size=100&bg=t&view=plan&size=250&pzl=2&sch=wwwwww" alt="CLL Case" id="caseImg">
+        
+        <br>
+        <br>
+        
+        <button onclick="getCaseInfo()" class="btn btn-default btn-lg">Get Case Info</button>
+        
+        <br>
+        <br>
+        
+        <div id="getCaseInfoContainer">
+            <ul id="caseInfoList">
+                <li class="caseInfo"><b>Name: </b><span id="getCaseInfoName"></span></li>
+                <li class="caseInfo"><b>Alg: </b><span id="getCaseInfoAlg"></span></li>
+                <li class="caseInfo"><b>AUF: </b><span id="getCaseInfoAUF"></span></li>
+            </ul>
+        </div>
+    </body>
+</html>
