@@ -16,7 +16,7 @@
         <img src="assets/icons/gear.png" alt="settings" id="settingsBtn">
         
         <div id="settingsSidr">
-           <br>
+            <br>
             <input type="checkbox"class="settingsCheckbox" id="aufCheckbox" /> <label for="aufCheckbox">Enable AUF</label>
         </div>
         
@@ -24,16 +24,8 @@
         <hr id="headinghr">
 
         <div id="selectContainer">
-            <select class="basic selectBig" name="setSelect" id="setSelect">
-                <option value="s">Sune</option>
-                <option value="as">Anti-Sune</option>
-                <option value="pi">Pi</option>
-                <option value="u">U</option>
-                <option value="l">L</option>
-                <option value="t">T</option>
-                <option value="h">H</option>
-                <option value="any">Any Case</option>
-            </select>
+            <select class="basic selectBig" name="setSelect" id="setSelect" onchange="setSelectChange()"></select>
+            <select class="basic selectBig" name="caseSelect" id="caseSelect"></select>
         </div>
         
         
@@ -53,11 +45,22 @@
         <br>
         
         <div id="getCaseInfoContainer">
-            <ul id="caseInfoList">
-                <li class="caseInfo"><b>Name: </b><span id="getCaseInfoName"></span></li>
-                <li class="caseInfo"><b>Alg: </b><span id="getCaseInfoAlg"></span></li>
-                <li class="caseInfo"><b>AUF: </b><span id="getCaseInfoAUF"></span></li>
-            </ul>
+            <table class="table table-bordered">
+                <tr>
+                    <td class="caseInfoTitle col-md-2"><b>name</b></td>
+                    <td id="getCaseInfoName" class="caseInfo"></td>
+                </tr>
+                
+                <tr>
+                    <td class="caseInfoTitle col-md-2"><b>algs</b></td>
+                    <td id="getCaseInfoAlgs" class="caseInfo"></td>
+                </tr>
+                
+                <tr>
+                    <td class="caseInfoTitle col-md-2"><b>auf</b></td>
+                    <td id="getCaseInfoAUF" class="caseInfo"></td>
+                </tr>
+            </table>
         </div>
     </body>
 </html>

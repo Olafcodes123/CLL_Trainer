@@ -19,7 +19,7 @@ body{
     margin-top: 50px;
     font-family: Jaapokki;
     text-transform: uppercase;
-    color: #505050;
+    color: #454545;
 }
 
 #headinghr{
@@ -36,16 +36,12 @@ body{
     letter-spacing: 1.3px;
 }
 
- .selectBig ~ .trigger{
+.selectBig ~ .trigger{
     width: 200% !important;
 }
 
- .selectBig ~ .options{
+.selectBig ~ .options{
     width: 200% !important;
-}
-
-#getCaseInfoContainer {
-    display: none;
 }
 
 .options{
@@ -60,22 +56,24 @@ body{
 }
 
 #getCaseInfoContainer{
-    border: 3px solid #7c7c7c;
-    width: 40%;
+    border: 3px solid rgba(0, 0, 0, 0.4);
+    min-width: 35%;
     padding: 2%;
     margin: 0px auto;
-    border-radius: 10px;
+    border-radius: 7px;
+    display: none;
+    text-align: left;
+    font-family: monospace;
 }
 
 #caseInfoList{
     list-style-type: none;
 }
 
-.caseInfo{
+.caseInfoTitle{
     font-size: 1.25em;
-    margin: 20px 0px;
-    
-    font-family: monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
 }
 
 .caseInfo b{
@@ -107,4 +105,8 @@ body{
 
 #settingsSidr {
     display: none;
+}
+
+.caseInfo {
+    font-size: 1.15em;
 }
